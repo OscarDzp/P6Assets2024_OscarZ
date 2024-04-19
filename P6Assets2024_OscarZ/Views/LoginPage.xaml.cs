@@ -29,8 +29,15 @@ public partial class LoginPage : ContentPage
         await Navigation.PushAsync(new UserSignUpPage());
     }
 
-    private void BtnIngresar_Clicked(object sender, EventArgs e)
+    private async void BtnIngresar_Clicked(object sender, EventArgs e)
     {
+        //TODO: Agregar llamada al API para consultar el usuario por
+        //el correo y contra
+
+        //si la respuesta es correcta entonces mostramos la pagina de
+        // seleccion de opciones
+
+        await Navigation.PushAsync(new OptionsPage());
 
     }
 }

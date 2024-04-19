@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="P6Assets2024_OscarZ.Views.OptionsPage"
+             Title="Options Page">
+    <VerticalStackLayout>
+        <Label 
+            Text="Select an Action"
+            VerticalOptions="CenterAndExpand" 
+            HorizontalOptions="CenterAndExpand" 
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            FontSize="30"
+            />
+        <!--agregar por medio de un grid (deben investigar como se usa)  de 2 columnas * 3 filas 6 botones para imitar -->
+
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0" Grid.Column="0" Text="Assets Managment" BackgroundColor="#FF5733" Margin="5" HeightRequest="200"/>
+            <Button Grid.Row="0" Grid.Column="1" Text="My Account" BackgroundColor="Gold" Margin="5" HeightRequest="200"/>
+            <Button Grid.Row="1" Grid.Column="0" Text="Departments" BackgroundColor="#5733FF" Margin="5" HeightRequest="200" />
+            <Button Grid.Row="1" Grid.Column="1" Text="Categories" BackgroundColor="DarkCyan" Margin="5" HeightRequest="200"/>
+            <Button Grid.Row="2" Grid.Column="0" Text="Depreciation Managment" BackgroundColor="Brown" Margin="5" HeightRequest="200" />
+            <Button Grid.Row="2" Grid.Column="1" Text="Exit" BackgroundColor="#3366FF" Margin="5" HeightRequest="200" />
+        </Grid>
+         
+
+
+
+    </VerticalStackLayout>
+</ContentPage>
